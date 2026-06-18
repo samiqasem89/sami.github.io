@@ -1,331 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TechPulse | Tech Events & Industry News</title>
-  <meta
-    name="description"
-    content="TechPulse is a frontend website for discovering technology events, AI conferences, cybersecurity updates, cloud news, and startup innovation."
-  />
-<!-- index.html -->
-  <link rel="stylesheet" href="style.css" />
-  <script src="script.js"></script>
-</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="TechPulse is a modern frontend website for discovering major technology events, product launches, AI news, cybersecurity updates, and startup stories."
+    />
+    <title>TechPulse | Events & News in Tech</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#home" aria-label="TechPulse home">
+        <span class="brand-mark">⌁</span>
+        <span>TechPulse</span>
+      </a>
 
-<body>
-  <header class="site-header" id="siteHeader">
-    <a class="brand" href="#top" aria-label="TechPulse home">
-      <span class="brand-mark">T</span>
-      <span>TechPulse</span>
-    </a>
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-nav-toggle>
+        <span></span>
+        <span></span>
+      </button>
 
-    <nav class="site-nav" id="siteNav">
-      <a href="#events">Events</a>
-      <a href="#news">News</a>
-      <a href="#insights">Insights</a>
-      <a href="#subscribe">Subscribe</a>
-    </nav>
+      <nav class="site-nav" data-nav>
+        <a href="#events">Events</a>
+        <a href="#news">News</a>
+        <a href="#insights">Insights</a>
+        <a href="#newsletter">Subscribe</a>
+      </nav>
+    </header>
 
-    <button class="nav-toggle" id="navToggle" aria-label="Open navigation">
-      <span></span>
-      <span></span>
-    </button>
-  </header>
-
-  <main id="top">
-    <section class="hero">
-      <div class="hero-content reveal">
-        <p class="eyebrow">Technology Events • AI • Cloud • Cybersecurity</p>
-        <h1>Discover what is next in tech.</h1>
-        <p class="hero-copy">
-          A modern hub for technology conferences, startup launches, AI updates,
-          cybersecurity briefings, and cloud industry news.
-        </p>
-        <div class="hero-actions">
-          <a class="button button-primary" href="#events">Explore Events</a>
-          <a class="button button-ghost" href="#news">Read Industry News</a>
-        </div>
-      </div>
-    </section>
-
-    <div class="ticker" aria-label="Technology topics ticker">
-      <div class="ticker-track">
-        <span>AI Infrastructure</span>
-        <span>Cybersecurity</span>
-        <span>Cloud Computing</span>
-        <span>Startup Funding</span>
-        <span>Developer Tools</span>
-        <span>Product Launches</span>
-        <span>Data Engineering</span>
-        <span>Machine Learning</span>
-        <span>AI Infrastructure</span>
-        <span>Cybersecurity</span>
-        <span>Cloud Computing</span>
-        <span>Startup Funding</span>
-      </div>
-    </div>
-
-    <section id="insights" class="intro-section">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Industry Intelligence</p>
-        <h2>Built for people who follow technology closely.</h2>
-        <p>
-          Track major events, product announcements, market shifts, and practical
-          insights across the technology ecosystem.
-        </p>
-      </div>
-
-      <div class="feature-grid">
-        <article class="feature-card reveal">
-          <span class="feature-icon">01</span>
-          <h3>Curated tech events</h3>
-          <p>
-            Find conferences, product demos, security briefings, cloud summits,
-            and startup showcases in one clean interface.
+    <main id="home">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-overlay"></div>
+        <div class="hero-content reveal">
+          <p class="eyebrow">Tech events · AI news · Product launches</p>
+          <h1 id="hero-title">The signal for what is next in technology.</h1>
+          <p class="hero-copy">
+            Track high-impact conferences, startup launches, AI infrastructure trends, cybersecurity updates,
+            and the stories shaping the technology industry.
           </p>
-        </article>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#events">Explore events</a>
+            <a class="button button-secondary" href="#news">Read latest news</a>
+          </div>
+        </div>
+      </section>
 
-        <article class="feature-card reveal">
-          <span class="feature-icon">02</span>
-          <h3>News that matters</h3>
+      <section class="ticker" aria-label="Featured technology topics">
+        <div class="ticker-track">
+          <span>AI Infrastructure</span>
+          <span>Cloud Platforms</span>
+          <span>Cybersecurity</span>
+          <span>Developer Tools</span>
+          <span>Startups</span>
+          <span>Hardware Design</span>
+          <span>Enterprise Software</span>
+          <span>Venture Capital</span>
+        </div>
+      </section>
+
+      <section class="section intro-section reveal" id="insights">
+        <div class="section-heading centered">
+          <p class="eyebrow">Built for fast readers</p>
+          <h2>Important tech updates, organized like a product experience.</h2>
           <p>
-            Follow AI, cybersecurity, cloud, SaaS, data, and infrastructure
-            trends without unnecessary noise.
+            A clean, premium layout inspired by modern product pages: focused sections, strong visuals,
+            smooth interactions, and clear calls to action.
           </p>
-        </article>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <span class="feature-icon">01</span>
+            <h3>Curated events</h3>
+            <p>Discover conferences, webinars, launches, and founder events across AI, cloud, security, and software.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon">02</span>
+            <h3>Brief news cards</h3>
+            <p>Read concise summaries designed for quick scanning without losing context or relevance.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon">03</span>
+            <h3>Interactive filtering</h3>
+            <p>Filter events and news by category, then search across topics, locations, and companies.</p>
+          </article>
+        </div>
+      </section>
 
-        <article class="feature-card reveal">
-          <span class="feature-icon">03</span>
-          <h3>Simple user experience</h3>
+      <section class="section spotlight reveal">
+        <div class="spotlight-copy">
+          <p class="eyebrow">Featured story</p>
+          <h2>AI-native tools are changing how technical teams build, secure, and ship products.</h2>
           <p>
-            Search, filter, and explore content with a polished frontend layout
-            inspired by modern product websites.
+            From endpoint protection to design automation, the strongest platforms are moving beyond static tools
+            into intelligent systems that assist decisions, reduce friction, and create faster feedback loops.
           </p>
-        </article>
-      </div>
-    </section>
-
-    <section class="spotlight reveal">
-      <div class="spotlight-copy">
-        <p class="eyebrow">Featured</p>
-        <h2>AI is changing how teams build, secure, and scale.</h2>
-        <p>
-          From AI-native cybersecurity platforms to cloud-native design tools,
-          the next wave of technology is being shaped by automation, better data,
-          and faster product cycles.
-        </p>
-        <a class="text-link" href="#events">View upcoming events →</a>
-      </div>
-
-      <div class="spotlight-panel">
-        <div class="spotlight-stat">
-          <span class="metric">AI</span>
-          <span>Engineering workflows, security automation, and developer productivity.</span>
+          <a href="#newsletter" class="text-link">Get the weekly briefing →</a>
         </div>
-        <div class="spotlight-stat">
-          <span class="metric">Cloud</span>
-          <span>Infrastructure, platforms, observability, and scalable applications.</span>
+        <div class="spotlight-panel" aria-label="Featured metrics">
+          <div>
+            <span class="metric">48</span>
+            <p>tracked events this quarter</p>
+          </div>
+          <div>
+            <span class="metric">12</span>
+            <p>industry categories covered</p>
+          </div>
+          <div>
+            <span class="metric">5 min</span>
+            <p>average weekly read time</p>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="events">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Upcoming Events</p>
-        <h2>Explore technology events.</h2>
-        <p>
-          Filter events by category or search by topic, city, or event name.
-        </p>
-      </div>
-
-      <div class="toolbar reveal">
-        <div class="filter-group" aria-label="Event filters">
-          <button class="filter-button active" data-filter="all">All</button>
-          <button class="filter-button" data-filter="ai">AI</button>
-          <button class="filter-button" data-filter="cloud">Cloud</button>
-          <button class="filter-button" data-filter="cybersecurity">Cybersecurity</button>
-          <button class="filter-button" data-filter="startup">Startup</button>
+      <section class="section" id="events">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Upcoming events</p>
+          <h2>Find the right room before the conversation moves on.</h2>
         </div>
 
-        <label class="search-label">
-          <span class="sr-only">Search events</span>
-          <input id="eventSearch" type="search" placeholder="Search events..." />
-        </label>
-      </div>
+        <div class="toolbar reveal">
+          <div class="filter-group" role="group" aria-label="Event category filters">
+            <button class="filter-button active" type="button" data-filter="all">All</button>
+            <button class="filter-button" type="button" data-filter="AI">AI</button>
+            <button class="filter-button" type="button" data-filter="Cloud">Cloud</button>
+            <button class="filter-button" type="button" data-filter="Cybersecurity">Cybersecurity</button>
+            <button class="filter-button" type="button" data-filter="Startups">Startups</button>
+          </div>
+          <label class="search-label">
+            <span class="sr-only">Search events and news</span>
+            <input id="searchInput" type="search" placeholder="Search topics, cities, or companies" autocomplete="off" />
+          </label>
+        </div>
 
-      <div class="cards-grid" id="eventGrid">
-        <article class="event-card reveal" data-category="ai" data-title="AI Product Summit San Francisco">
-          <div class="card-top">
+        <div class="cards-grid" id="eventGrid" aria-live="polite"></div>
+      </section>
+
+      <section class="section dark-section" id="news">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Latest news</p>
+          <h2>Short updates with enough context to act.</h2>
+        </div>
+        <div class="news-layout reveal">
+          <article class="lead-news">
             <span class="tag">AI</span>
-            <span class="date-pill"><strong>24</strong><small>Jul</small></span>
-          </div>
-          <h3>AI Product Summit</h3>
-          <p>
-            A focused event for builders exploring AI product strategy,
-            automation, and applied machine learning workflows.
-          </p>
-          <div class="meta">San Francisco, CA • Hybrid</div>
-        </article>
-
-        <article class="event-card reveal" data-category="cybersecurity" data-title="Cyber Defense Forum Austin">
-          <div class="card-top">
-            <span class="tag">Cybersecurity</span>
-            <span class="date-pill"><strong>08</strong><small>Aug</small></span>
-          </div>
-          <h3>Cyber Defense Forum</h3>
-          <p>
-            Security leaders discuss endpoint protection, incident response,
-            identity security, AI threats, and risk management.
-          </p>
-          <div class="meta">Austin, TX • In person</div>
-        </article>
-
-        <article class="event-card reveal" data-category="cloud" data-title="Cloud Infrastructure Week Seattle">
-          <div class="card-top">
-            <span class="tag">Cloud</span>
-            <span class="date-pill"><strong>19</strong><small>Aug</small></span>
-          </div>
-          <h3>Cloud Infrastructure Week</h3>
-          <p>
-            Sessions on cloud architecture, serverless systems, observability,
-            automation, networking, and platform engineering.
-          </p>
-          <div class="meta">Seattle, WA • Virtual</div>
-        </article>
-
-        <article class="event-card reveal" data-category="startup" data-title="Startup Launch Night Los Angeles">
-          <div class="card-top">
-            <span class="tag">Startup</span>
-            <span class="date-pill"><strong>04</strong><small>Sep</small></span>
-          </div>
-          <h3>Startup Launch Night</h3>
-          <p>
-            Founders, investors, and product teams showcase new tools in AI,
-            SaaS, fintech, health tech, and developer platforms.
-          </p>
-          <div class="meta">Los Angeles, CA • In person</div>
-        </article>
-
-        <article class="event-card reveal" data-category="ai" data-title="Applied AI Engineering Lab Remote">
-          <div class="card-top">
-            <span class="tag">AI</span>
-            <span class="date-pill"><strong>17</strong><small>Sep</small></span>
-          </div>
-          <h3>Applied AI Engineering Lab</h3>
-          <p>
-            A practical workshop on AI agents, prompt design, workflow
-            automation, evaluations, and business use cases.
-          </p>
-          <div class="meta">Remote • Workshop</div>
-        </article>
-
-        <article class="event-card reveal" data-category="cloud" data-title="Modern DevOps and Platform Engineering">
-          <div class="card-top">
-            <span class="tag">Cloud</span>
-            <span class="date-pill"><strong>02</strong><small>Oct</small></span>
-          </div>
-          <h3>Modern DevOps Forum</h3>
-          <p>
-            A technical event covering CI/CD, infrastructure as code,
-            Kubernetes, monitoring, and cloud security practices.
-          </p>
-          <div class="meta">New York, NY • Hybrid</div>
-        </article>
-      </div>
-    </section>
-
-    <section id="news" class="dark-section">
-      <div class="section-heading reveal">
-        <p class="eyebrow">Industry News</p>
-        <h2>Follow the signals, not the noise.</h2>
-        <p>
-          Stay close to the technology shifts that affect builders, founders,
-          engineers, and business leaders.
-        </p>
-      </div>
-
-      <div class="news-layout">
-        <article class="lead-news reveal">
-          <span class="tag">Top Story</span>
-          <h2>AI-native platforms are becoming the new enterprise standard.</h2>
-          <p>
-            Companies are moving beyond simple automation and using AI to
-            improve security, product design, operations, support, and decision-making.
-          </p>
-          <button class="button button-light modal-open" data-title="AI-native platforms are becoming the new enterprise standard.">
-            Read summary
-          </button>
-        </article>
-
-        <div class="news-list">
-          <article class="news-item reveal modal-open" data-title="Cloud teams prioritize cost visibility and automation.">
-            <span class="tag">Cloud</span>
-            <h3>Cloud teams prioritize cost visibility and automation.</h3>
+            <h3>Enterprise AI shifts from experimentation to workflow ownership.</h3>
             <p>
-              Engineering teams are focusing on observability, governance, and
-              efficient infrastructure scaling.
+              Teams are moving from isolated pilots to AI systems that support security operations, product design,
+              customer support, and internal knowledge work.
             </p>
+            <button class="button button-light" type="button" data-open-modal="Enterprise AI shifts from experimentation to workflow ownership.">Read brief</button>
           </article>
-
-          <article class="news-item reveal modal-open" data-title="Cybersecurity vendors accelerate AI threat detection.">
-            <span class="tag">Security</span>
-            <h3>Cybersecurity vendors accelerate AI threat detection.</h3>
-            <p>
-              Endpoint, identity, and cloud security platforms are adding more
-              AI-driven detection and response workflows.
-            </p>
-          </article>
-
-          <article class="news-item reveal modal-open" data-title="Developer tools continue moving toward intelligent workflows.">
-            <span class="tag">Developer Tools</span>
-            <h3>Developer tools continue moving toward intelligent workflows.</h3>
-            <p>
-              Modern tools are combining collaboration, automation, and AI to
-              reduce repetitive engineering work.
-            </p>
-          </article>
+          <div class="news-list" id="newsList"></div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="subscribe" class="newsletter reveal">
-      <div>
-        <p class="eyebrow">Newsletter</p>
-        <h2>Get the weekly tech brief.</h2>
-        <p>
-          A clean weekly digest of important events, news, product launches, and
-          industry trends.
-        </p>
-      </div>
-
-      <form id="newsletterForm">
-        <div class="form-row">
-          <label class="sr-only" for="emailInput">Email address</label>
-          <input id="emailInput" type="email" placeholder="Enter your email" required />
-          <button class="button button-primary" type="submit">Subscribe</button>
+      <section class="section newsletter reveal" id="newsletter">
+        <div>
+          <p class="eyebrow">Weekly briefing</p>
+          <h2>One email for the tech events and news worth tracking.</h2>
+          <p>Subscribe for a weekly digest of events, product launches, AI infrastructure updates, and cybersecurity signals.</p>
         </div>
-        <p class="form-message" id="formMessage"></p>
-      </form>
-    </section>
-  </main>
+        <form class="newsletter-form" id="newsletterForm">
+          <label for="email">Email address</label>
+          <div class="form-row">
+            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+            <button class="button button-primary" type="submit">Subscribe</button>
+          </div>
+          <p class="form-message" id="formMessage" role="status"></p>
+        </form>
+      </section>
+    </main>
 
-  <footer class="site-footer">
-    <span>© 2026 TechPulse. Frontend project by Sami Al Hammadi.</span>
-    <span>Events • News • AI • Cloud • Cybersecurity</span>
-  </footer>
+    <footer class="site-footer">
+      <p>© <span id="year"></span> TechPulse. Built as a static frontend project.</p>
+      <a href="#home">Back to top ↑</a>
+    </footer>
 
-  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-    <div class="modal-box">
-      <button id="modalClose" aria-label="Close modal">×</button>
-      <h2 id="modalTitle">Story title</h2>
-      <p>
-        This section can be connected later to real news articles, an API, or a
-        content management system. For now, it demonstrates frontend interaction,
-        modal behavior, and a polished product-style user experience.
+    <dialog class="modal" id="briefModal" aria-labelledby="modalTitle">
+      <button class="modal-close" type="button" aria-label="Close" data-close-modal>×</button>
+      <p class="eyebrow">Tech brief</p>
+      <h2 id="modalTitle">Brief title</h2>
+      <p id="modalCopy">
+        This short brief is a frontend demo interaction. Replace this text later with full article content,
+        an API response, or CMS data.
       </p>
-    </div>
-  </div>
-
-</body>
+    </dialog>
+      
+    <script src="script.js"></script>
+  </body>
 </html>
