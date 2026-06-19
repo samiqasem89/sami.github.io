@@ -7,17 +7,11 @@ A responsive static frontend website for technology events and industry news. Th
 - Full-screen hero section using the provided header image
 - Event cards with category filters
 - Search across events, topics, locations, and companies
-- News section with modal brief interaction
+- News section with a modal brief interaction
 - Newsletter form with client-side confirmation
 - Scroll reveal animations
 - Responsive mobile navigation
 
-## Files
-
-- `index.html` — page structure and content
-- `style.css` — responsive styling and layout
-- `script.js` — filtering, search, modal, menu, form, and animation behavior
-- `assets/header.jpg` — hero background image
 
 ## How to run
 
