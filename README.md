@@ -21,4 +21,4 @@ A responsive static frontend website for technology events and industry news. Th
 
 ## How to run
 
-Open `index.html` in a browser, or deploy the folder to GitHub Pages, Netlify, Vercel, or any static hosting provider.
+Open `https://samiqasem89.github.io/tech-events-news/` in a browser, or deploy the folder to GitHub Pages, Netlify, Vercel, or any static hosting provider.
